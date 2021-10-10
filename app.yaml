@@ -1,0 +1,10 @@
+runtime: python37
+default_expiration: "10m"
+
+handlers:
+- url: /templates
+  static_dir: templates
+  expiration: "1m"
+
+- url: .*
+  script: auto
